@@ -3,26 +3,24 @@ package Facade;
 class ComboFacade {
 	private Combo combo;
 
-	public ComboFacade(){
+	public ComboFacade(int x){
 		this.combo = new Combo();
-	}
 	
-	public void escolhe(int a) {
-		if (a == 1) {
+		if (x == 1) {
 			combo.setLanche("X-Burguer");
 			combo.setBebida("Coca-Cola");
 			combo.setBatata("Média");
 			combo.setPreco(35.90);
 		}	
 		
-		if (a == 2) {
+		if (x == 2) {
 			combo.setLanche("X-Tudo");
 			combo.setBebida("Tubaína");
 			combo.setBatata("Grande");
 			combo.setPreco(39.90);
 		}
 		
-		if (a == 3) {
+		if (x == 3) {
 			combo.setLanche("X-Frango");
 			combo.setBebida("Suco de Laranja");
 			combo.setBatata("Pequena");
